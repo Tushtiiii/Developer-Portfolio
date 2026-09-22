@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your creative web development skills with an interactive, visually striking portfolio designed for Gen Z aesthetics, featuring dynamic projects and playful elements.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
