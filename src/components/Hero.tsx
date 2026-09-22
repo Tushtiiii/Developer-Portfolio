@@ -9,23 +9,17 @@ const techTags = [
   "React ⚛️",
   "TypeScript 🔷",
   "Node.js 🟢",
-  "Spring Boot ☕",
   "PostgreSQL 🐘",
   "Tailwind CSS 🎨",
   "Vercel ▲",
   "Docker 🐳",
   "Next.js ⏭️",
   "MongoDB 🍃",
-  "Figma 🎯",
-  "GraphQL 🔺",
   "Redis ⚡",
-  "AWS ☁️",
 ]
 
 const stats = [
-  { value: "3+", label: "Yrs Experience" },
-  { value: "20+", label: "Projects shipped" },
-  { value: "100%", label: "Organic code" },
+  { value: "5", label: "Projects shipped" },
 ]
 
 // Absolute positions across the hero — desktop only via CSS
@@ -87,7 +81,7 @@ export default function Hero({ playClick }: HeroProps) {
                 👋 hey there!
               </span>
               <span className="font-mono text-xs text-black/40 dark:text-white/30">
-                creative dev &amp; ui designer
+                creative dev 
               </span>
             </motion.div>
 
@@ -100,7 +94,7 @@ export default function Hero({ playClick }: HeroProps) {
             >
               I'm{" "}
               <span className="relative inline-block">
-                <span className="relative z-10">mAct</span>
+                <span className="relative z-10">Tushtee</span>
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
@@ -206,7 +200,7 @@ export default function Hero({ playClick }: HeroProps) {
               <div className="relative z-10 text-center">
                 <div className="text-6xl mb-3">👨‍💻</div>
                 <div className="font-display font-bold text-xl text-black">
-                  mAct.dev
+                  Tushtee
                 </div>
                 <div className="font-mono text-xs text-black/60 mt-1">
                   creative web dev

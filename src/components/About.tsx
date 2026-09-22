@@ -5,15 +5,12 @@ const techStack = [
   { icon: '⚛️', label: 'React', color: '#70D6FF' },
   { icon: '🔷', label: 'TypeScript', color: '#BDE0FE' },
   { icon: '🟢', label: 'Node.js', color: '#CCFF00' },
-  { icon: '☕', label: 'Spring', color: '#FF70A6' },
   { icon: '🐘', label: 'PostgreSQL', color: '#E2D4F9' },
   { icon: '🎨', label: 'Tailwind', color: '#FFD166' },
   { icon: '▲', label: 'Next.js', color: '#CDB4DB' },
   { icon: '🐳', label: 'Docker', color: '#BDE0FE' },
   { icon: '⏭️', label: 'Vercel', color: '#FFC8DD' },
-  { icon: '🍃', label: 'MongoDB', color: '#CCFF00' },
-  { icon: '🎯', label: 'Figma', color: '#FFC8DD' },
-  { icon: '☁️', label: 'AWS', color: '#FFD166' },
+  { icon: '🍃', label: 'MongoDB', color: '#CCFF00' }
 ]
 
 function LiveClock() {
@@ -113,7 +110,7 @@ export default function About() {
               </div>
               {/* Handwritten caption */}
               <p className="text-center font-mono text-[11px] text-black/50 mt-2 italic">
-                mAct — building the future ✨
+                 building the future ✨
               </p>
             </div>
           </div>
@@ -125,12 +122,12 @@ export default function About() {
               <span className="text-[#FF70A6] font-bold">"wait, HOW?"</span>
             </p>
             <p className="font-mono text-[11px] text-black/55 dark:text-white/45 leading-relaxed mt-2">
-              Currently cooking up pixel-perfect experiences with React, Spring Boot &amp; PostgreSQL.
+              Currently cooking up pixel-perfect experiences with React, &amp; PostgreSQL.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-2 mt-auto">
-            {['🎮 Gamer', '🎵 Music Head', '☕ Coffee Snob', '🌙 Night Owl'].map((tag) => (
+            {[ '🎵 Music Head', '☕ Coffee Snob', '🌙 Night Owl'].map((tag) => (
               <span key={tag} className="px-2.5 py-1 bg-[#CCFF00] border border-black font-mono text-[10px] font-bold">
                 {tag}
               </span>

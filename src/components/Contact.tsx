@@ -6,7 +6,7 @@ const socials = [
   {
     label: 'GitHub',
     icon: '🐙',
-    href: '#',
+    href: 'github.com/Tushtiiii',
     bg: '#121212',
     text: '#fff',
     rotate: -3,
@@ -14,7 +14,7 @@ const socials = [
   {
     label: 'LinkedIn',
     icon: '💼',
-    href: '#',
+    href: 'linkedin.com/in/tushtee-kothare-807575293',
     bg: '#0077B5',
     text: '#fff',
     rotate: 2,
@@ -30,12 +30,13 @@ const socials = [
   {
     label: 'Email',
     icon: '📧',
-    href: 'mailto:hi@mact.dev',
+    href: 'mailto:tushteekotharegmail.com',
     bg: '#FF70A6',
     text: '#000',
     rotate: 4,
   },
-]
+];
+
 
 export default function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' })
@@ -232,10 +233,10 @@ export default function Contact() {
       >
         <div className="flex items-center gap-3">
           <div className="w-7 h-7 bg-[#CCFF00] border-2 border-black rounded-full flex items-center justify-center">
-            <span className="font-display font-bold text-[10px] text-black">mA</span>
+            <span className="font-display font-bold text-[10px] text-black">Tea</span>
           </div>
           <span className="font-mono text-xs text-black/40 dark:text-white/30">
-            mAct — Creative Web Developer
+            Tushtee - Creative Web Developer
           </span>
         </div>
         <div className="flex items-center gap-4">

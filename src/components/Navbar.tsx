@@ -40,15 +40,15 @@ export default function Navbar({ isDark, setIsDark, soundEnabled, setSoundEnable
             ? 'bg-[#F4F1EA]/95 dark:bg-[#121212]/95 backdrop-blur-md shadow-[4px_4px_0px_#000]'
             : 'bg-[#F4F1EA] dark:bg-[#1a1a1a] shadow-[4px_4px_0px_#000]'
           }
-          transition-all duration-200
+          transition-all duration-200 
         `}
       >
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 group">
           <div className="w-8 h-8 bg-[#CCFF00] border-2 border-black rounded-full flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:-translate-y-0.5 transition-transform">
-            <span className="font-display font-700 text-xs text-black">mA</span>
+            <span className="font-display font-700 text-xs text-black">Tea</span>
           </div>
-          <span className="font-display font-semibold text-sm dark:text-[#F4F1EA] hidden sm:block">mAct</span>
+          <span className="font-display font-semibold text-sm dark:text-[#F4F1EA] hidden sm:block">Tushtee</span>
           <span className="flex items-center gap-1.5 text-xs text-black/60 dark:text-white/50 hidden sm:flex">
             <span className="w-2 h-2 rounded-full bg-green-500 pulse-dot inline-block" />
             <span className="font-mono text-[10px]">Available ⚡</span>

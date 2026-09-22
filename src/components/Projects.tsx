@@ -92,7 +92,7 @@ function BrowserWindow({ project, isHovered, onHover, onLeave }: {
         </div>
         <div className="flex-1 flex items-center justify-center">
           <div className="bg-white/40 border border-black/20 rounded-full px-4 py-0.5 font-mono text-xs font-medium text-black">
-            mact.dev/{project.name.toLowerCase()}
+            {project.name.toLowerCase()}
           </div>
         </div>
         <div className="flex gap-1.5">
