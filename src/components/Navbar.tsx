@@ -46,7 +46,7 @@ export default function Navbar({ isDark, setIsDark, soundEnabled, setSoundEnable
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 group">
           <div className="w-8 h-8 bg-[#CCFF00] border-2 border-black rounded-full flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:-translate-y-0.5 transition-transform">
-            <span className="font-display font-700 text-xs text-black">Tea</span>
+            <span className="font-display font-700 text-xs text-black">🧋</span>
           </div>
           <span className="font-display font-semibold text-sm dark:text-[#F4F1EA] hidden sm:block">Tushtee</span>
           <span className="flex items-center gap-1.5 text-xs text-black/60 dark:text-white/50 hidden sm:flex">

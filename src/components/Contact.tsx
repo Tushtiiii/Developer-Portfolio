@@ -233,7 +233,7 @@ export default function Contact() {
       >
         <div className="flex items-center gap-3">
           <div className="w-7 h-7 bg-[#CCFF00] border-2 border-black rounded-full flex items-center justify-center">
-            <span className="font-display font-bold text-[10px] text-black">Tea</span>
+            <span className="font-display font-bold text-[10px] text-black">🧋</span>
           </div>
           <span className="font-mono text-xs text-black/40 dark:text-white/30">
             Tushtee - Creative Web Developer

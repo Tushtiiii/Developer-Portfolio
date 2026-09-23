@@ -42,7 +42,6 @@ export default function App() {
   return (
     <>
       <Cursor />
-
       {/* Scroll progress bar */}
       <div className="fixed top-0 left-0 right-0 h-0.5 z-[60] bg-black/5 dark:bg-white/5">
         <motion.div

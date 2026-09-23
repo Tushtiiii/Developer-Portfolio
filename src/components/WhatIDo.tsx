@@ -20,10 +20,10 @@ const services = [
   {
     icon: '⚙️',
     title: 'Backend Dev',
-    desc: 'Robust APIs with Spring Boot & Node.js, PostgreSQL data modeling, JWT auth, WebSocket real-time features.',
+    desc: 'Robust APIs with Node.js, PostgreSQL data modeling, JWT auth, WebSocket real-time features.',
     color: '#70D6FF',
     rotate: -1,
-    tags: ['Spring Boot', 'Node.js', 'PostgreSQL'],
+    tags: ['Node.js', 'PostgreSQL'],
   },
   {
     icon: '🚀',
