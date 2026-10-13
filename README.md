@@ -162,25 +162,6 @@ Developer Portfolio/
 
 ---
 
-## 🚢 Deployment
-
-You can deploy this portfolio to your preferred hosting provider in just a few minutes:
-
-### Vercel
-```bash
-npm install -g vercel
-vercel
-```
-*Alternatively, connect your GitHub repository directly to [Vercel](https://vercel.com/) for automatic deployments on push.*
-
-### Netlify
-```bash
-npm run build
-```
-Publish directory: `dist`
-
----
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE) — feel free to use it as an inspiration or template for your own developer portfolio!

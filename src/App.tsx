@@ -8,6 +8,8 @@ import Projects from './components/Projects'
 import StickerCanvas from './components/StickerCanvas'
 import Contact from './components/Contact'
 import Cursor from './components/Cursor'
+import FloatingMusicBar from './components/FloatingMusicBar'
+import { MusicProvider } from './context/MusicContext'
 
 export default function App() {
   const [isDark, setIsDark] = useState(false)
@@ -40,7 +42,7 @@ export default function App() {
   }, [soundEnabled])
 
   return (
-    <>
+    <MusicProvider>
       <Cursor />
       {/* Scroll progress bar */}
       <div className="fixed top-0 left-0 right-0 h-0.5 z-[60] bg-black/5 dark:bg-white/5">
@@ -60,11 +62,12 @@ export default function App() {
         />
         <Hero playClick={playClick} />
         <WhatIDo />
-        <About />
+        <About playClick={playClick} />
         <Projects />
         <StickerCanvas />
         <Contact />
+        <FloatingMusicBar playClick={playClick} />
       </div>
-    </>
+    </MusicProvider>
   )
 }

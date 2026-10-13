@@ -33,18 +33,10 @@ function LiveClock() {
   )
 }
 
-function AudioBars() {
-  return (
-    <div className="flex items-end gap-1" style={{ height: 28 }}>
-      {[1, 2, 3, 4, 5].map((i) => (
-        <div
-          key={i}
-          className={`w-2 bg-[#1DB954] rounded-sm bar-${i}`}
-          style={{ height: '100%', transformOrigin: 'bottom' }}
-        />
-      ))}
-    </div>
-  )
+import MusicPlayer from './MusicPlayer'
+
+interface AboutProps {
+  playClick?: () => void
 }
 
 const cardVariants = {
@@ -52,7 +44,7 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
 }
 
-export default function About() {
+export default function About({ playClick }: AboutProps) {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null)
 
   return (
@@ -154,46 +146,9 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Card 3: Now Playing */}
-        <motion.div
-          variants={cardVariants}
-          className="border-2 border-black shadow-[6px_6px_0px_#000] p-5 bg-[#F4F1EA] dark:bg-[#111]"
-        >
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-[#1DB954] flex items-center justify-center">
-                <span className="text-[8px] text-white">▶</span>
-              </div>
-              <span className="font-mono text-[10px] text-black/50 dark:text-white/40 uppercase tracking-widest">
-                Now Playing
-              </span>
-            </div>
-            <AudioBars />
-          </div>
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 border-2 border-black bg-gradient-to-br from-[#FF70A6] to-[#70D6FF] flex items-center justify-center text-2xl shadow-[2px_2px_0px_#000] shrink-0">
-              🎵
-            </div>
-            <div>
-              <p className="font-display font-bold text-sm dark:text-white">lo-fi beats to ship to</p>
-              <p className="font-mono text-[11px] text-black/50 dark:text-white/40">coding playlist · spotify</p>
-            </div>
-          </div>
-          <div>
-            <div className="h-1 bg-black/10 dark:bg-white/10 rounded-full overflow-hidden">
-              <motion.div
-                className="h-full bg-[#1DB954] rounded-full"
-                initial={{ width: '0%' }}
-                whileInView={{ width: '68%' }}
-                transition={{ duration: 2, delay: 0.3 }}
-                viewport={{ once: true }}
-              />
-            </div>
-            <div className="flex justify-between mt-1.5">
-              <span className="font-mono text-[10px] text-black/35 dark:text-white/25">2:14</span>
-              <span className="font-mono text-[10px] text-black/35 dark:text-white/25">3:47</span>
-            </div>
-          </div>
+        {/* Card 3: Interactive Music Player */}
+        <motion.div variants={cardVariants} className="h-full">
+          <MusicPlayer playClick={playClick} />
         </motion.div>
 
         {/* Card 4: Tech Stack */}

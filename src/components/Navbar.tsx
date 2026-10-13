@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useMusic } from '../context/MusicContext'
 
 interface NavbarProps {
   isDark: boolean
@@ -19,6 +20,7 @@ const navLinks = [
 export default function Navbar({ isDark, setIsDark, soundEnabled, setSoundEnabled, playClick }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const { isPlaying, togglePlay, currentTrack } = useMusic()
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40)
@@ -72,11 +74,25 @@ export default function Navbar({ isDark, setIsDark, soundEnabled, setSoundEnable
 
         {/* Controls */}
         <div className="flex items-center gap-2">
+          {/* Music player toggle */}
+          <button
+            onClick={() => { togglePlay(); playClick() }}
+            className={`hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border-2 border-black text-[10px] font-mono font-semibold shadow-[2px_2px_0px_#000] hover:-translate-y-0.5 active:translate-y-0 transition-transform ${
+              isPlaying
+                ? 'bg-[#CCFF00] text-black font-bold'
+                : 'bg-[#FFD166] dark:bg-[#2a2a2a] dark:text-white'
+            }`}
+            title={isPlaying ? `Now Playing: ${currentTrack.title} (Click to pause)` : 'Play lo-fi music'}
+          >
+            <span>{isPlaying ? '🎵' : '🎧'}</span>
+            <span className="hidden md:inline">{isPlaying ? 'Playing' : 'Music'}</span>
+          </button>
+
           {/* Sound toggle */}
           <button
             onClick={() => { setSoundEnabled(!soundEnabled); playClick() }}
             className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border-2 border-black text-[10px] font-mono font-semibold bg-[#E2D4F9] dark:bg-[#2a2a2a] dark:text-white shadow-[2px_2px_0px_#000] hover:-translate-y-0.5 active:translate-y-0 transition-transform"
-            title="Toggle sound"
+            title="Toggle click sound"
           >
             {soundEnabled ? '🔊' : '🔇'}
           </button>
