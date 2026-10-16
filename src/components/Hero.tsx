@@ -198,7 +198,7 @@ export default function Hero({ playClick }: HeroProps) {
                 }}
               />
               <div className="relative z-10 text-center">
-                <div className="text-6xl mb-3">👨‍💻</div>
+                <div className="text-6xl mb-3">👩🏻‍💻</div>
                 <div className="font-display font-bold text-xl text-black">
                   Tushtee
                 </div>

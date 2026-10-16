@@ -60,7 +60,7 @@ export default function About({ playClick }: AboutProps) {
         <span className="font-mono text-xs text-black/40 dark:text-white/30">02</span>
         <h2 className="font-display font-bold text-3xl sm:text-4xl dark:text-white">
           Behind The Screens{' '}
-          <span>🖥️</span>
+          <span>👩🏻‍💻</span>
         </h2>
         <div className="flex-1 h-0.5 bg-black/10 dark:bg-white/10" />
       </motion.div>
@@ -90,7 +90,7 @@ export default function About({ playClick }: AboutProps) {
             />
             <div className="bg-white border-2 border-black p-3 pb-10 shadow-[4px_4px_0px_#00000030]">
               <div className="w-full aspect-square bg-gradient-to-br from-[#E2D4F9] via-[#CDB4DB] to-[#FF70A6] flex items-center justify-center relative overflow-hidden">
-                <span className="text-8xl">👨‍💻</span>
+                <span className="text-8xl">👩🏻‍💻</span>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#FF70A6]/20 to-transparent" />
                 {/* Scan-line overlay for Y2K feel */}
                 <div

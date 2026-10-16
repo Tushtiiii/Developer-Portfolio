@@ -7,7 +7,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import StickerCanvas from './components/StickerCanvas'
 import Contact from './components/Contact'
-import Cursor from './components/Cursor'
+// import Cursor from './components/Cursor'
 import FloatingMusicBar from './components/FloatingMusicBar'
 import { MusicProvider } from './context/MusicContext'
 
@@ -43,7 +43,7 @@ export default function App() {
 
   return (
     <MusicProvider>
-      <Cursor />
+      {/* <Cursor /> */}
       {/* Scroll progress bar */}
       <div className="fixed top-0 left-0 right-0 h-0.5 z-[60] bg-black/5 dark:bg-white/5">
         <motion.div
@@ -52,7 +52,7 @@ export default function App() {
         />
       </div>
 
-      <div className="min-h-screen bg-[#F4F1EA] dark:bg-[#121212] grid-bg transition-colors duration-300 overflow-x-hidden cursor-none">
+      <div className="min-h-screen bg-[#F4F1EA] dark:bg-[#121212] grid-bg transition-colors duration-300 overflow-x-hidden cursor-auto">
         <Navbar
           isDark={isDark}
           setIsDark={setIsDark}
