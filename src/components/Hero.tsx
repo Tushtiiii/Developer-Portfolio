@@ -152,7 +152,9 @@ export default function Hero({ playClick }: HeroProps) {
                 View Projects 🚀
               </a>
               <a
-                href="#"
+                href="/resume.pdf"
+                target="_blank"
+                rel="noreferrer"
                 onClick={playClick}
                 className="brutalist-btn inline-flex items-center gap-2 px-7 py-3.5 bg-[#FF70A6] text-black font-display font-bold text-sm border-2 border-black shadow-[4px_4px_0px_#000] rounded-full -rotate-1 hover:rotate-0 transition-all"
               >
