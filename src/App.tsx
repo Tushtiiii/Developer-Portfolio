@@ -51,7 +51,6 @@ export default function App() {
           style={{ width: progressWidth }}
         />
       </div>
-
       <div className="min-h-screen bg-[#F4F1EA] dark:bg-[#121212] grid-bg transition-colors duration-300 overflow-x-hidden cursor-auto">
         <Navbar
           isDark={isDark}

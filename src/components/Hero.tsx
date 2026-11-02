@@ -152,7 +152,7 @@ export default function Hero({ playClick }: HeroProps) {
                 View Projects 🚀
               </a>
               <a
-                href="/resume.pdf"
+                href="resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 onClick={playClick}
@@ -161,7 +161,6 @@ export default function Hero({ playClick }: HeroProps) {
                 Grab Resume 📄
               </a>
             </motion.div>
-
             {/* Stats row */}
             <motion.div
               initial={{ opacity: 0 }}

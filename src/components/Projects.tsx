@@ -60,16 +60,16 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    name: 'CampusMarketplace',
-    tagline: 'Full-Stack Student E-Commerce Platform',
+    name: 'Alumni Connect',
+    tagline: 'Full-Stack Alumni Networking Platform',
     description:
-      'Full-stack marketplace enabling students to buy and sell items on campus with secure authentication and product management.',
+      'Full-stack platform connecting alumni and students with secure authentication, profiles, and community-focused features.',
     highlights: [
-      'Developed a full-stack marketplace enabling students to buy and sell items on campus, with secure JWT-based authentication',
-      'Designed REST APIs for managing products, users, and transactions',
-      'Built product listings, search & filtering, and user dashboards with a responsive, performance-optimized UI',
+      'Developed a full-stack alumni networking platform with secure JWT-based authentication',
+      'Designed REST APIs for managing users, profiles, and platform interactions',
+      'Built searchable content and user dashboards with a responsive, performance-optimized UI',
     ],
-    tags: ['🛍️ Campus Market', 'Next.js', 'Node.js'],
+    tags: ['🤝 Alumni Network', 'Next.js', 'Node.js'],
     stickers: ['🎒', '🏷️'],
     color: '#70D6FF',
     textColor: '#000',
@@ -263,4 +263,3 @@ export default function Projects() {
     </section>
   )
 }
-
