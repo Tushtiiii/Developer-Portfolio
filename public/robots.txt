@@ -1,0 +1,15 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Explicitly allow social media crawlers for OG/link previews
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+Sitemap: https://developer-portfolio-ruddy-nine.vercel.app/sitemap.xml
